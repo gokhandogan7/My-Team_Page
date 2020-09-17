@@ -1,0 +1,27 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    
+    border: 1px solid aqua;
+}
+.person img{
+    border-radius: 5px;
+    height: 40vh;
+}
+.container_2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid black;
+    justify-items: center;
+    
+    
+}
+.titr{
+    writing-mode: vertical-lr;
+    
+}
+.person{
+    display: flex;
+}
