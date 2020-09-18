@@ -1,10 +1,23 @@
+body{
+    display:grid;
+    place-items: center;
+      
+}
+
+.main_container{
+    /* border: 1px solid red; */
+    width: 75%;
+    margin-left: 12%;
+
+}
+
 .container{
-    width: 100%;
+    /* width: 55em; */
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    justify-items: center;
-    
-    border: 1px solid aqua;
+    grid-template-columns: 1fr 1.3fr ;
+    /* justify-items: center; */
+    /* border: 1px solid aqua; */
+    min-width: 880px;
 }
 .person img{
     border-radius: 5px;
@@ -13,15 +26,92 @@
 .container_2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 2px solid black;
-    justify-items: center;
+    /* border: 2px solid black; */
+    /* justify-items: center; */
     
     
 }
+.person2, .person5{
+margin-top: 100px;
+}
+
+
 .titr{
     writing-mode: vertical-lr;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:0.8rem ;
+    padding-left: 10px;
     
 }
 .person{
     display: flex;
+}
+
+.person p{
+    font-weight: bolder;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size:1rem ;
+    
+}
+.left_text{
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.right_text{
+    /* justify-self: end; */
+    font-size:1.1rem;
+    max-width:600px ;
+    
+}
+
+
+
+@media(max-width:1200px){
+    .container{
+        grid-template-columns:1fr 1.3fr;
+        min-width: 550px;
+
+    }
+    .left_text{
+        text-align: center;
+    }
+    .right_text{
+        justify-self: end;
+        padding-left: 50px;
+    }
+    .container_2{
+        grid-template-columns: 1fr 1fr;
+    }
+    .main_container{
+        margin-left: 7%;
+    }
+    .person2,.person4,.person6{
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+    .person5{
+        margin-top: 0;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        grid-template-columns:1fr ;
+        min-width: 350px;
+
+    }
+    .right_text{
+        justify-self: end;
+        text-align: center;
+    }
+    .container_2{
+        grid-template-columns: 1fr ;
+        justify-items: center;
+    }
+    .left_text{
+        text-align: center;
+    }
+    .person{
+        margin-top: 0;
+    }
 }
