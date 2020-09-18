@@ -103,16 +103,21 @@ margin-top: 100px;
     .right_text{
         justify-self: end;
         text-align: center;
+        padding-left: 0;
     }
     .container_2{
         grid-template-columns: 1fr ;
         justify-items: center;
+        margin-left: 30px;
     }
     .left_text{
         text-align: center;
     }
     .person{
         margin-top: 0;
+        margin-left: 0;
+    }
+    .main_container{
         margin-left: 0;
     }
 }
